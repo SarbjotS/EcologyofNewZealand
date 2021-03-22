@@ -10,7 +10,14 @@ public class playerMover : MonoBehaviour
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
 
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private float groundCheckDistance;
+    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private float gravity;
+    
     private Vector3 moveDirection;
+    private Vector3 velocity;
+
 
     private CharacterController controller;
 
@@ -27,6 +34,7 @@ public class playerMover : MonoBehaviour
 
     private void Move()
     {
+    	isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
         float moveZ = Input.GetAxis("Vertical");
         moveDirection = new Vector3(0, 0, -moveZ);
         
