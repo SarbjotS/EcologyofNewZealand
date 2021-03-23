@@ -9,6 +9,7 @@ public class playerMover : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
+    [SerializeField] private float jumpHeight;
 
     [SerializeField] private bool isGrounded;
     [SerializeField] private float groundCheckDistance;
@@ -34,23 +35,44 @@ public class playerMover : MonoBehaviour
 
     private void Move()
     {
-    	isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
+        isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         float moveZ = Input.GetAxis("Vertical");
         moveDirection = new Vector3(0, 0, -moveZ);
-        
-        if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
+
+        if (isGrounded)
         {
-            Walk();
-        }else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
-        {
-            Run();
-        }else if (moveDirection == Vector3.zero){
-            Idle();
+
+            if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
+            {
+                Walk();
+            }
+            else if (moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
+            {
+                Run();
+            }
+            else if (moveDirection == Vector3.zero)
+            {
+                Idle();
+            }
+            moveDirection *= moveSpeed;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
+
         }
-        moveDirection *= moveSpeed;
-        controller.Move(moveDirection* Time.deltaTime);
-        
+        controller.Move(moveDirection * Time.deltaTime);
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
     }
+    
+        
 
     void Idle()
     {
@@ -66,6 +88,11 @@ public class playerMover : MonoBehaviour
     void Run()
     {
         moveSpeed = runSpeed;
+    }
+
+    void Jump()
+    {
+        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
     }
 
 }
