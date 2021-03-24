@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,4 +25,3 @@ public class CameraController : MonoBehaviour
        // parent.Rotate(Vector3.up, mouseX);
     }
 } 
-*/

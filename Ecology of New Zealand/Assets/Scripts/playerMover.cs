@@ -15,7 +15,7 @@ public class playerMover : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float gravity;
-    
+
     private Vector3 moveDirection;
     private Vector3 velocity;
 
@@ -71,8 +71,8 @@ public class playerMover : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
-    
-        
+
+
 
     void Idle()
     {
