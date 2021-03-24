@@ -747,3 +747,43 @@ System memory in use after: 103.7 MB.
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1981.
 Total: 3.140500 ms (FindLiveObjects: 0.172800 ms CreateObjectMapping: 0.056100 ms MarkObjects: 2.640600 ms  DeleteObjects: 0.269400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000874 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.554 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1401 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.8 MB.
+System memory in use after: 103.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1983.
+Total: 2.262400 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.057400 ms MarkObjects: 1.797700 ms  DeleteObjects: 0.234500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2542.264647 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(821ee32c6ad2e804a9eb4b9aeff0da6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(821ee32c6ad2e804a9eb4b9aeff0da6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75728ec082f9e7432b2d6976326b0f4') in 0.016368 seconds
+  Import took 0.035905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.265085 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(aed6af3023d12384ca47cd47a63b997b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(aed6af3023d12384ca47cd47a63b997b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52238205427be518daee0c215bce325') in 0.011623 seconds
+  Import took 0.028124 seconds .
+
