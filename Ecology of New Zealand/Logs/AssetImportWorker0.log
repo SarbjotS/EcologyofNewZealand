@@ -723,3 +723,68 @@ Received Import Request.
 Start importing Assets/Materials/Gold.asset using Guid(d28c83bbefee3d54ba964df3575ea474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3744a822756c52a6d360a1d77e607baa') in 0.040185 seconds
   Import took 0.045577 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.112921 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.303 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1442 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.5 MB.
+System memory in use after: 106.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2033.
+Total: 2.959900 ms (FindLiveObjects: 0.243200 ms CreateObjectMapping: 0.233300 ms MarkObjects: 2.083900 ms  DeleteObjects: 0.397900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 790.263150 seconds.
+  path: Assets/BackgroundImage.png
+  artifactKey: Guid(6f7d6b199043e6f41bb8c47348c30fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BackgroundImage.png using Guid(6f7d6b199043e6f41bb8c47348c30fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9aad22418fccbdb87f80cdf927b2d5') in 1.204007 seconds
+  Import took 1.469568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.795936 seconds.
+  path: Assets/BackgroundImage.png
+  artifactKey: Guid(6f7d6b199043e6f41bb8c47348c30fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BackgroundImage.png using Guid(6f7d6b199043e6f41bb8c47348c30fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9aad22418fccbdb87f80cdf927b2d5') in 0.030718 seconds
+  Import took 0.034268 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.086637 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.756 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1442 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.5 MB.
+System memory in use after: 106.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2036.
+Total: 2.286700 ms (FindLiveObjects: 0.176400 ms CreateObjectMapping: 0.056600 ms MarkObjects: 1.662800 ms  DeleteObjects: 0.389300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
