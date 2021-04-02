@@ -10,4 +10,14 @@ public class Settings : MonoBehaviour
     {
         audioMixer.SetFloat("volume", volume); 
     }
+
+    public void SetQuality (int QualityIndex)
+    {
+        QualitySettings.SetQualityLevel(QualityIndex);
+    }
+
+    public void SetFullScreen(bool fullScreened)
+    {
+        Screen.fullScreen = fullScreened;
+    }
 }
