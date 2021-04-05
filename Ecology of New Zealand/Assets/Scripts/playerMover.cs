@@ -85,7 +85,10 @@ public class playerMover : MonoBehaviour
         Quaternion targetRotation  = Quaternion.Euler(0, desiredRotation, 0);
         transform.rotation = Quaternion.Lerp(currentRotation, targetRotation, RotationSpeed * Time.deltaTime);
 
-
+        if (Input.GetKey(KeyCode.E) && !Walking && !jumping)
+        {
+            MyAnimator.SetTrigger("wave");
+        }
     }
 
 
