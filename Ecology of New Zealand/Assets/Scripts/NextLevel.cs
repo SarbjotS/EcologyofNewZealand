@@ -5,13 +5,16 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 
-public class OpenDoor : MonoBehaviour
+public class NextLevel: MonoBehaviour
 {
 
     public bool inRange;
     public KeyCode Interact;
     public UnityEvent InteractAction;
+    [SerializeField] private Transform Player;
+    [SerializeField] private Transform respawnPoint;
     // Start is called before the first frame update
+    private CharacterController controller;
     void Start()
     {
         
@@ -24,7 +27,7 @@ public class OpenDoor : MonoBehaviour
         {
             if (Input.GetKeyDown(Interact))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }
