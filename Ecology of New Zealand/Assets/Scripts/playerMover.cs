@@ -29,6 +29,8 @@ public class playerMover : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         MyAnimator = GetComponent<Animator>();
+        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(MyCamera);
 
     }
     private void Update()
